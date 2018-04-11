@@ -1,0 +1,13 @@
+{
+  "user": {
+    "login": "login123",
+    "password": "qwerty123"
+  },
+  "authorizationScreen": {
+    "wrongLoginPasswordMessage": "Wrong login or password. Please check your input data and try again."
+  },
+  "learnScreen": {
+    "screenName": "Учись"
+  }
+  
+}

@@ -1,0 +1,8 @@
+{
+  "authorizationScreen": {
+    "loginField": "#loginform-login",
+    "passField": "#loginform-password",
+    "loginButton": ".btn",
+    "errorMessage": ".popover-content"
+  }
+}
