@@ -6,7 +6,7 @@ describe('Test login', () => {
     cy.fixture('equeo_test_data.json').as('data');
     cy.visit('/');
   });
-  /*
+  
   it('Login positive', function() {
     cy.get(this.locators.authorizationScreen.loginField)
       .type(this.data.user.login)
@@ -29,9 +29,9 @@ describe('Test login', () => {
     cy.url().should('be.eq', "https://test-equeo.ru/");
     cy.contains(this.data.learnScreen.screenName);
   });
-*/
+
   it('Login negative', function() {
-  /*  const randomLogin = faker.name.firstName();
+    const randomLogin = faker.name.firstName();
     const randomPass = faker.lorem.word();
 
 
@@ -48,7 +48,10 @@ describe('Test login', () => {
     cy.get(this.locators.authorizationScreen.loginButton).click();
     cy.get(this.locators.authorizationScreen.errorMessage)
       .contains(this.data.authorizationScreen.wrongLoginPasswordMessage);
-*/
-    cy.login('qwe', 'qwe', 'qwe');
   })
+
+  // only
+  it('Run custom function', function() {
+    cy.customAlert('it works!');
+  });
 });

@@ -24,16 +24,6 @@
 // -- This is will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
 
-Cypress.Commands.add('login', (login, password, token) => {
-  cy.request({
-    method: 'POST',
-    url: '/login',
-    form: true,
-    body: {
-      login: login,
-      password: password,
-      rememberMe: 0,
-      _csrf: token
-    }
-  });
+Cypress.Commands.add('customAlert', (text) => {
+  alert(text);
 });
